@@ -24,10 +24,11 @@ export default defineConfig({
       copyright: '© 2026 Clover 精选'
     }
   },
+  appearance: 'light',
   markdown: {
     theme: {
       light: 'vitesse-light',
-      dark: 'vitesse-dark'
+      dark: 'vitesse-light'
     }
   }
 })
