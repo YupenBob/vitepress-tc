@@ -6,7 +6,10 @@ export default defineConfig({
   lang: 'zh-Hans',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#10b981' }],
+    ['meta', { name: 'theme-color', content: '#0a0a0a' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap', rel: 'stylesheet' }],
   ],
   themeConfig: {
     siteTitle: 'Clover 精选',
@@ -15,14 +18,7 @@ export default defineConfig({
       { text: 'AI 工具', link: '/ai-tools' },
       { text: '关于', link: '/about' }
     ],
-    sidebar: [
-      {
-        text: 'AI 工具精选',
-        items: [
-          { text: '2026 年 10 款最佳免费 AI', link: '/ai-tools' }
-        ]
-      }
-    ],
+    sidebar: false,
     footer: {
       message: 'Built with VitePress + ☘️ Clover',
       copyright: '© 2026 Clover 精选'
